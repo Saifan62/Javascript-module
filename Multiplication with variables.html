@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>Multiplication with Javascript</title>
+    </head>
+    <h2>Multiply</h2>
+    <script>
+        function multiplyTwoNumbers() {
+            let x, y, z;
+
+            x = prompt("Enter the first number");
+            y = prompt("Enter the second number");
+            z = x * y;
+
+            return z;
+        }
+
+        let product = multiplyTwoNumbers();
+        document.write(`The product of x and y is ` + product);
+    </script>
 </html>
