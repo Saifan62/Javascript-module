@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            .alert {
+                color: rgb(255, 255, 255);
+                background: olive;
+                padding: 5px;
+                font-weight: bold;
+                font-family: cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="heading">Welcome</h1>
+            <p>Hello</p>
+        </header>
+        <p>How are you?</p>
+        <script>
+            /* First step:How to add a new div. */
+            let x = document.createElement('div')
+            x.className = "alert";
+            x.innerHTML = "<p> Yay I have created a div!</p>";
+            document.body.append(x);
+
+            /* Second step: How to access an id and manupulate them. */
+            document.getElementById('heading').innerHTML = '&#128519'
+            /* Third step: How to access an element using css selector */
+            document.querySelector('header p').innerHTML = '<b>Good job!</b>'
+        </script>
+    </body>
+</html>
