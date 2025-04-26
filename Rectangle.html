@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Making changes to the rectangle</title>
+        <style>
+            h2 {
+                text-align: center;
+                font-family: cursive;
+            }
+
+            .rectangle {
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                margin: auto;
+            }
+
+            .buttons {
+                padding: 20px;
+                width: 400px;
+                margin: auto;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Making changes to the rectangle</h2>
+        <div class ="rectangle"></div>
+        <div class="buttons">
+            <button onclick="changeToCircle()">Make Circle</button>
+            <button onclick="hide()">Hide</button>
+            <button onclick="show()">Show</button>
+            <button onclick="changeToRectangle()">Make Rectangle</button>
+            </div>
+<script>
+    var rect = document.querySelector('.rectangle');
+            function changeToCircle() { 
+                rect.style.borderRadius = '50%';
+                rect.style.width = '100px';
+                rect.style.height = '100px';
+            }
+
+            function hide() {
+                rect.style.display = 'none';
+            }
+
+            function show() {
+                rect.style.display = 'block';
+            }
+
+            function changeToRectangle() {
+                rect.style.borderRadius =  '0%';
+                rect.style.width =  '200px';
+                rect.style.height =  '100px';
+            }
+
+            rect.onmouseenter = function () {
+                rect.style.background = 'purple';
+            }
+
+            rect.onmouseout = function () {
+                rect.style.background = 'none';
+            }
+
+
+
+
+            </script>    
+    </body>
+</html>
