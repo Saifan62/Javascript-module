@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        li a:hover {
+            background-color: lightblue;
+        }
+    </style>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="info.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Intersting facts about animals</h1>
+        <img src="images (4).jpg" alt="Tiger" width="300" height="200">
+        <br>
+        <button onclick="tiger()">Read more</button>
+        <p id="Tiger-info"></p>
+        <img src="leone-africano-2.jpg" alt="lion" width="300" height="200">
+        <br>
+        <button onclick="lion()" >Read more</button>
+        <p id="Lion-info"></p>
+
+        <script>
+            function tiger() {
+                document.getElementById("Tiger-info").innerHTML = "Tigers are the largest cat species in the world.";
+            }
+
+            function lion() {
+                document.getElementById("Lion-info").innerHTML = "Lions are known as the 'king of the jungle'.";
+            }
+        </script>
+
+    </body>
+    
+</html>
