@@ -41,6 +41,14 @@ body {
     border-radius: 5px;
     
 }
+
+.carousel-container {
+display: flex;
+justify-content: center;
+}
+ 
+
+
 </style>
 </head>
 <body>
@@ -51,26 +59,33 @@ body {
             <a href="contact.html">Contact</a>
         </div>
         <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif ; font-size: 30px; text-transform: capitalize;">Pictures of our tourist places</h1>
-        <section>
+        <section class="carousel-container">
+         <img class="myslides" src="Best placesto travel.webp" alt="Eiffel Tower" style="width: 90%; height: 40%;">
+         <img class="myslides" src="New Work.jpg" alt="New Work" style="width: 90%; height: 40%;">
+         <img class="myslides" src="4 in 1.jpg" alt="4in1" style="width: 90%; height: 40%;">
+         <img class="myslides" src="China.webp" alt="Eiffel Tower" style="width: 90%; height: 40%;">
+         <img class="myslides" src="Italy.jpg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
          <img class="myslides" src="eiffel-tower-outro-stock.jpg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
-         <img class="myslides" src="NEW-YORK-CITY.jpg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
-         <img class="myslides" src="Recognised-for-its-exceptional-beauty-and-cultural-significance-the-Taj-Mahal-a-UNESCO-World-Heritage-Site-in-Agra-India-has-also-been-featured-in-the-list-in-the-22nd-position.-Here-are-th.jpg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
-         <img class="myslides" src="images.jpeg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
+         <img class="myslides" src="Island.avif" alt="Eiffel Tower" style="width: 90%; height: 40%;">
+         <img class="myslides" src="Phuket.jpg" alt="Phuket" style="width: 90%; height: 40%;">
+         <img class="myslides" src="Singapore.jpg" alt="Singapore" style="width: 90%; height: 40%;">
+         <img class="myslides" src="Tourist destinations.jpg" alt="Eiffel Tower" style="width: 90%; height: 40%;">
 </section>
 <script>
     var myindex = 0;
-    carousel();
+    
     function carousel() {
         var i;
-        var x = getElementsByClassName("myslides");
+        var x = document.getElementsByClassName("myslides");
         for (i=0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         myindex++;
         if (myindex > x.length) {myindex=1}
         x[myindex-1].style.display = "block";
-        setTimeout(carousel, 3000);
+        setTimeout(carousel, 2000);
     }
+    carousel();
 </script>
 </body>
 </html>
