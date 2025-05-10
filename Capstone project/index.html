@@ -40,6 +40,64 @@ body {
     border-radius: 5px;
     
 }
+
+.pimg-1 ,.pimg-2 ,.pimg-3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg-3 {
+    background-image: url(https://shorturl.at/hQvfx);
+    height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-dark {
+    background-color: #333;
+    color: white;
+}
+
+.section-light {
+    background-color: rgb(251, 234, 203);
+    color: rgb(93, 95, 2);
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+@media(max-width:568px) {
+    .pimg-1, .pimg-2, .pimg-3 {
+        background-attachment: scroll;
+    }
+}
         </style>
     </head>
     <body>
@@ -47,7 +105,42 @@ body {
             <a class="active" href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
+            <a href="Services.html">Services</a>
             <a href="contact.html">Contact</a>
+            
+        </div>
+        <section>
+            <span class="border-trans" style="font-size: 40px;">
+            <center >Welcome to Home Page</center>
+            </span><br>
+        </section>
+        <section class="section section-light">
+            <h2>Section 1</h2>
+            <p>
+                Traveling is the act of going to new places to explore, relax, or learn.
+                 It offers a chance to experience different cultures, meet new people, and make lasting memories.
+            </p>
+        </section>
+        <div class="pimg-3">
+            <div class="ptext">
+                <span class="border-trans">
+                    Travelling is our pation
+                </span>
+            </div>
+        </div>
+        <section class="section section-dark">
+            <h2>Section 2</h2>
+            <p>
+                Traveling is the act of going to new places to explore, relax, or learn.
+                 It offers a chance to experience different cultures, meet new people, and make lasting memories.
+            </p>
+        </section>
+        <div class="pimg-3">
+            <div class="ptext">
+                <span class="border-trans">
+                    Travelling is our pation
+                </span>
+            </div>
         </div>
     </body>
 
